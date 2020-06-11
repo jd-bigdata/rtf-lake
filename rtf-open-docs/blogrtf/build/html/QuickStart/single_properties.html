@@ -1,0 +1,257 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>安装RTF(单机版本) &mdash; RTF 1.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="快速开始" href="start.html" />
+    <link rel="prev" title="安装RTF(kafka版本)" href="kafka_properties.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> RTF
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../GETTING_STARTED/Introduction.html">RTF简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GETTING_STARTED/background.html">研发背景</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Quick Start</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="environment.html">环境说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kafka_properties.html">安装RTF(kafka版本)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">安装RTF(单机版本)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">快速开始</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../User/workway.html">流程及架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../User/technology.html">技术概要</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../User/compare.html">技术特点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../User/question.html">常见问题解答</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Download</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Download/download.html">我要获得RTF</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Communication</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Communication/communication.html">联系我们</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RTF</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>安装RTF(单机版本)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/QuickStart/single_properties.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="rtf">
+<h1>安装RTF(单机版本)<a class="headerlink" href="#rtf" title="永久链接至标题">¶</a></h1>
+<p>1、首先我们需要开启binlog功能，并配置binlog模式为ROW，在my.cnf中配置如下信息</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">mysqld</span><span class="p">]</span>
+<span class="n">log</span><span class="o">-</span><span class="nb">bin</span>       <span class="o">=</span> <span class="n">mysql</span><span class="o">-</span><span class="nb">bin</span>  <span class="c1">#  开启binlog</span>
+<span class="n">binlog</span><span class="o">-</span><span class="nb">format</span> <span class="o">=</span> <span class="n">ROW</span>        <span class="c1">#  选择模式为ROW</span>
+<span class="n">server_id</span>     <span class="o">=</span> <span class="mi">1</span>          <span class="c1">#</span>
+</pre></div>
+</div>
+<p>由于我们从binlog读取数据的方式是主从复制，所以需要一个非root用户模仿slave。需要新建用户并授权，如果已经有非root账号可以直接授权</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>CREATE USER rtfuser IDENTIFIED BY ‘rtfuser’;
+GRANT SELECT, REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO ‘rtfuser’@‘%’;
+FLUSH PRIVILEGES;  #  刷新权限
+</pre></div>
+</div>
+<p>2、点击下载RTF项目压缩包:<a class="reference internal" href="../Download/download.html"><span class="doc">Download</span></a></p>
+<p>上传到服务器上并解压到指定目录：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tar</span> <span class="o">-</span><span class="n">zxvf</span> <span class="n">rtf</span><span class="o">-</span><span class="n">writer</span><span class="o">-</span><span class="mf">1.0</span><span class="o">-</span><span class="n">SNAPSHOT</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="n">rtf</span>
+</pre></div>
+</div>
+<p>3、在启动之前，我们需要进入解压之后的目录下的conf，在rtf_writer.properties中配置以下信息：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">host</span>        <span class="o">=</span>  <span class="c1">#mysql所在的主机ip</span>
+<span class="n">port</span>        <span class="o">=</span>  <span class="c1">#mysql的端口名称，一般默认为3306</span>
+<span class="n">dn_names</span>    <span class="o">=</span>  <span class="c1">#监听的离线表名，按照db1:table1 db2:table2格式输入</span>
+<span class="n">username</span>    <span class="o">=</span>  <span class="c1">#之前新建的用户</span>
+<span class="n">password</span>    <span class="o">=</span>  <span class="c1">#用户的密码</span>
+<span class="n">filenames</span>   <span class="o">=</span>  <span class="c1">#存放实时数据的hdfs上的文件夹，不同的文件夹需要用空格隔开(需要与dn_names严格一一对应)</span>
+<span class="n">primaryKeys</span> <span class="o">=</span>  <span class="c1">#每个表的主键信息(需要与dn_names严格一一对应)</span>
+<span class="n">allfields</span>   <span class="o">=</span>  <span class="c1">#每个表各个字段的信息(需要与dn_names严格一一对应)</span>
+</pre></div>
+</div>
+<p>至此，需要配置的基本信息就已经全部完成了。接下来，需要在hdfs上初始化你希望获得实时数据的离线表的对应文件夹。请转到<a class="reference internal" href="start.html"><span class="doc">快速开始</span></a>，有我们为您提供的一个示范。</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="start.html" class="btn btn-neutral float-right" title="快速开始" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="kafka_properties.html" class="btn btn-neutral float-left" title="安装RTF(kafka版本)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, anjinlong
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

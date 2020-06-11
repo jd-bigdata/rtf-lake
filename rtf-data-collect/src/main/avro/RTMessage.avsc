@@ -1,0 +1,14 @@
+{
+    "namespace": "com.jd.dw.rtf.binlog.avro",
+    "type": "record",
+    "name": "RtfData",
+    "fields": [
+        {"name": "mid", "type": "long"},
+        {"name": "db",  "type": "string"},
+        {"name": "tb", "type": "string"},
+        {"name": "ts", "type": "long"},
+        {"name": "opt", "type": "string"},
+        {"name":"src","type":[{"type":"map","values":["string","null"]},"null"]},
+        {"name":"cur","type":[{"type":"map","values":["string","null"]},"null"]}
+    ]
+}

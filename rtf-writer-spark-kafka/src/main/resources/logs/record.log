@@ -1,0 +1,64 @@
+2020/03/30 23:01:37 START_COMPACTION_FACTOR:10
+2020/03/30 23:01:37 MUST_COMPACTION_FACTOR:300
+2020/03/30 23:01:37 APPEND_FACTOR:100000
+2020/03/30 23:01:37 CORE_POOL_SIZE:5
+2020/03/30 23:01:37 MAX_POOL_SIZE:10
+2020/03/30 23:01:37 CONSUME_TIME:10000
+2020/03/30 23:01:37 MAX_COMPACTION_NUM:2
+2020/03/30 23:01:37 filename: hdfs://10.198.201.202:9000/home/hadoop/rtf_demo_test/usermessage/
+2020/03/30 23:01:37 topicName: tpUsermessage
+2020/03/30 23:01:37 brokerlist: 10.198.226.201:9092
+2020/03/30 23:01:37 group: test
+2020/03/30 23:01:37 checkPointDir: hdfs://10.198.201.202:9000/home/hadoop/rtf_demo_test//checkpointuser
+2020/03/30 23:01:37 offsetFilename: hdfs://10.198.201.202:9000/home/hadoop/rtf_demo_test/usermessage/offset.properties
+2020/03/30 23:01:37 fields: id,name,age
+2020/03/30 23:01:37 fieldArray: id,name,age
+2020/03/30 23:01:37 primaryKeyArray: id
+2020/03/30 23:01:37 maxRatePerPartition: 20000
+2020/03/30 23:01:37 durations: 10
+2020/03/30 23:01:37 subconcurrency: 10
+2020/03/30 23:01:37 backPressureEnabled:false
+2020/03/30 23:01:37 backPressureInitialRate:0
+2020/03/30 23:01:37 recentlyNDays: 2147483647
+2020/03/30 23:01:37 executorIdleTimeout:1800s
+2020/03/30 23:01:37 java.class.path = rtf-writer-spark-kafka-1.0-SNAPSHOT.jar
+hdfs://10.198.201.202:9000/home/hadoop/rtf_demo_test/usermessage/
+2020/03/30 23:01:38 sortedFilenameList size:5,sortedFilenameList:[0, 20000000, 40000000, 60000000, 80000000]
+2020/03/30 23:01:38 sortedFilenameMap size:5
+2020/03/30 23:01:38 FilePartitionInfoCache size：5 duration：868
+2020/03/30 23:01:39 offset信息不存在!
+2020/03/30 23:02:00  key: 0
+2020/03/30 23:02:00  key: 6
+2020/03/30 23:02:00  minKey: 0
+2020/03/30 23:02:00 写offset文件：
+2020/03/30 23:02:00 0 : 4
+2020/03/30 23:02:00 1 : 3
+2020/03/30 23:02:00 2 : 5
+2020/03/30 23:02:10  key: 6
+2020/03/30 23:02:10  key: 12
+2020/03/30 23:02:10  minKey: 6
+2020/03/30 23:02:10 写offset文件：
+2020/03/30 23:02:10 0 : 4
+2020/03/30 23:02:10 1 : 3
+2020/03/30 23:02:10 2 : 5
+2020/03/30 23:02:20  key: 18
+2020/03/30 23:02:20  key: 12
+2020/03/30 23:02:20  minKey: 12
+2020/03/30 23:02:20 写offset文件：
+2020/03/30 23:02:20 0 : 4
+2020/03/30 23:02:20 1 : 3
+2020/03/30 23:02:20 2 : 5
+2020/03/30 23:02:30  key: 18
+2020/03/30 23:02:30  key: 24
+2020/03/30 23:02:30  minKey: 18
+2020/03/30 23:02:30 写offset文件：
+2020/03/30 23:02:30 0 : 4
+2020/03/30 23:02:30 1 : 3
+2020/03/30 23:02:30 2 : 5
+2020/03/30 23:02:40  key: 24
+2020/03/30 23:02:40  key: 30
+2020/03/30 23:02:40  minKey: 24
+2020/03/30 23:02:40 写offset文件：
+2020/03/30 23:02:40 0 : 4
+2020/03/30 23:02:40 1 : 3
+2020/03/30 23:02:40 2 : 5

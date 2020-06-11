@@ -1,0 +1,241 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>流程及架构 &mdash; RTF 1.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="技术概要" href="technology.html" />
+    <link rel="prev" title="快速开始" href="../QuickStart/start.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> RTF
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../GETTING_STARTED/Introduction.html">RTF简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GETTING_STARTED/background.html">研发背景</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Quick Start</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../QuickStart/environment.html">环境说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../QuickStart/kafka_properties.html">安装RTF(kafka版本)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../QuickStart/single_properties.html">安装RTF(单机版本)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../QuickStart/start.html">快速开始</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">流程及架构</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">工作流程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rtf">RTF架构</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="technology.html">技术概要</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compare.html">技术特点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question.html">常见问题解答</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Download</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Download/download.html">我要获得RTF</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Communication</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Communication/communication.html">联系我们</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RTF</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>流程及架构</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/User/workway.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>流程及架构<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id2">
+<h2>工作流程<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p><img alt="RTF整体流程" src="../_images/liucheng001.png" /></p>
+<p>        RTF表是一个主要针对于实时数据的存储及查询的技术，而实时数据的来源根本上来讲就是数据库中数据的变化，在这个前提下，我们通过对mysql中的binlog进行解析从而拿到那些变化的数据，解析的操作类型有insert，update和delete。每次解析完成之后，数据都将被封装为特定的数据格式（RtfMessageType）被加入到队列的末尾。而当队列不为空时，队列的头部将会由消费者不断的拉取信息，并交给RTFWriter来执行写入存储单元的操作。RTFWriter作为一个常驻服务，不仅仅起到了write的作用，同时还根据写入消息主键的HashCode将消息对应到各自的存储单元。在写入的同时，RTFWriter会发起TopN合并的操作，将缓冲存储区的消息与主存储区合并。<br />        在进行实时数据查询的时候，RTFReader将根据索引条件去对应的HDFS目录下遍历数据文件，并根据消息的主键来分组并得到最新事件的消息，从而返回最新的数据提供给用户。从而，使用者只通过简单的sql语句就能够快速的获得实时数据。</p>
+</div>
+<div class="section" id="rtf">
+<h2>RTF架构<a class="headerlink" href="#rtf" title="永久链接至标题">¶</a></h2>
+<p><img alt="RTF整体流程" src="../_images/jiagou.png" /></p>
+<p>        RTF支持的消息源有两种，它们分别为Mysql中的binlog日志及Kafka中的消费数据。在单机版的RTF中，数据源层为直接的binlog日志中数据，当小数据量或者不考虑消费积压时可以直接通过单机方式将数据写入HDFS，适用于个人及测试；但通常来说生产环境下我们需要考虑各种复杂的因素，比如数据的波动和大数据量的写入，这时我们就需要用到Kafka作为处理积压的方案，并且使用更加强大的计算引擎spark做支持。在存储层面我们使用主流的HDFS作为存储系统，这让RTF技术能够更加贴合国内的技术应用，并且RTF的存储模式也使得它更加方便管理和低成本的存储。在实时引擎层则是RTF对于来源数据的一些处理操作，例如消费拉取，数据转换，数据写入，压实操作及空文件初始化等，在数据被RTFWriter处理完成之后，可以由RTFReader来发起读取操作。最终的查询引擎层则支持了hive，presto和spark的查询方式。</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="technology.html" class="btn btn-neutral float-right" title="技术概要" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../QuickStart/start.html" class="btn btn-neutral float-left" title="快速开始" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, anjinlong
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
