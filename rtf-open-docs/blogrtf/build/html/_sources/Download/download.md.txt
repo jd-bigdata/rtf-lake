@@ -1,4 +1,6 @@
 我要获得RTF
 ================
 
-<a href="../picture/liucheng001.png" download="pict.png">附件</a>
+[RTF-lake单机版本V1.0](https://github.com/jd-bigdata/rtf-lake/releases/tag/V1.0)
+
+[RTF-lake正式版本V1.0.0](https://github.com/jd-bigdata/rtf-lake/releases/tag/V1.0)
