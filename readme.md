@@ -6,6 +6,8 @@
 
 使用RTF需要mysql5.x，hadoop2.0，jdk1.8及以上版本。
 
+如果您想对于RTF-lake有更多的了解，或者想联系我们，请访问RTF文档：https://rtf-docs.readthedocs.io/en/master/
+
 
 
 **2.  RTF流程说明**
