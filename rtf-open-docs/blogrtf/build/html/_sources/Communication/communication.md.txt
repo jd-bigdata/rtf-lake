@@ -1,9 +1,9 @@
 联系我们
 ==============
 
-如果您在使用RTF中碰到任何困难或者疑问可以试图联系
-anjinglong@jd.com
-或者
-chenjianfei16@jd.com
+如果您在使用RTF中碰到任何困难或者疑问，或者您有任何对于RTF的意见以及好点子都可以试图联系
+
+anjinglong@jd.com 或者 chenjianfei16@jd.com
+
 
 感谢您对于RTF数据湖的支持，我们一定会尽可能地保持对于产品的升级与维护，以便让您拥有更好的使用体验。
