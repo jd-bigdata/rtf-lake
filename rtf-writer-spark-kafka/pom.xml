@@ -11,7 +11,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spark.version>2.3.1    </spark.version>
+        <spark.version>2.4.8</spark.version>
         <scala.version>2.11.12</scala.version>
         <shyiko.version>0.20.1</shyiko.version>
         <hadoop.version>3.2.1</hadoop.version>
