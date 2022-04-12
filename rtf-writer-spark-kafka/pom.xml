@@ -14,7 +14,7 @@
         <spark.version>2.3.1    </spark.version>
         <scala.version>2.11.12</scala.version>
         <shyiko.version>0.20.1</shyiko.version>
-        <hadoop.version>3.2.1</hadoop.version>
+        <hadoop.version>3.2.3</hadoop.version>
     </properties>
 
     <dependencies>
