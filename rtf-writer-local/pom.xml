@@ -13,7 +13,7 @@
         <hadoop.version>3.2.1</hadoop.version>
         <lang.version>2.6</lang.version>
         <lzo.version>0.4.20-SNAPSHOT</lzo.version>
-        <mysql-conn.version>8.0.19</mysql-conn.version>
+        <mysql-conn.version>8.0.28</mysql-conn.version>
         <shyiko.version>0.20.1</shyiko.version>
     </properties>
 
